@@ -24,6 +24,21 @@
     }
 }
 
+@media screen and (max-width: 994px) {
+    .banner-tittle p{
+        text-align: center;
+    }
+
+    .selection-container{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .selection-container select{
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 768px){
     .nav-container{
         flex-direction: column;
@@ -39,10 +54,22 @@
     .nav-items{
         width: 100%;
     }
+
+    main{
+        margin-top: 190px;
+    }
 }
 
 @media screen and (max-width: 590px){
     .nav-items ul{
         flex-direction: column;
+    }
+
+    .banner-description{
+        width: 200px;
+    }
+
+    main{
+        margin-top: 350px;
     }
 }
