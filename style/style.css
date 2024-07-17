@@ -14,16 +14,10 @@
 .nav-container{
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
     padding: 20px 150px;
     width: 100%;
-    position: fixed;
-    z-index: 100;
     background-color: transparent;
-    top: 0;
-    left: 0;
+    transition: all 250ms ease-in-out;
 }
 
 .nav-logo{
@@ -98,7 +92,7 @@
 
 .banner-container{
     padding: 150px;
-    margin: 120px auto 0;
+    margin: 20px auto 0;
     width: 90%;
     border-radius: 16px;
     display: flex;
@@ -153,7 +147,7 @@
     outline: none;
 }
 
-.selection-container button{
+button{
     width: 174px;
     height: 52px;
     border: none;
@@ -166,12 +160,69 @@
     border-radius: 8px;
 }
 
-.selection-container i{
+i{
     margin-right: 5px;
 }
 
+/* popular tour section */
 
+ .popular-tours-container{
+    width: 90%;
+    margin: 100px auto 0;
+    display: flex;
+    padding: 0 200px;
+    gap: 24px;
+}
 
+.popular-tours-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.text-container{
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: rgba(19, 19, 24, 0.7);
+    max-width: 577px;
+    line-height: 26px;
+}
+
+.popular-tittle p{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+}
+
+.text-container ul{
+    margin: 24px 0 24px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 525px;
+
+}
+
+.popular-tours-left button{
+    margin-top: 32px;
+}
+
+.popular-tours-right{
+    width: 50%;
+    background-image: url(../Images/Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 1690px){
+    .popular-tours-container{
+        padding: 0 140px;
+    }
+}
 
 
 
